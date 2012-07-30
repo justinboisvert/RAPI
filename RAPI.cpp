@@ -1,5 +1,5 @@
 #include "RAPI.h"
-
+//excessive comment
 CurlRetrieve* RAPI::httpStream;
 Json::Reader* RAPI::reader;
 RedditUser* RAPI::user;
