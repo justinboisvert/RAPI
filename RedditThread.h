@@ -9,6 +9,8 @@ enum ThreadTypes {
 };
 
 class RedditThread {
+
+    
 public:
     RedditThread(std::string title_, std::string author_, std::string ID_,int comments_, std::string thumburl, std::string subreddit, int ups_, int downs_, int type_, std::string content_);
     std::string getTitle();

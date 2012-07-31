@@ -1,0 +1,5 @@
+Program(
+	source=Glob("*.cpp"),
+	target="a.out",
+	LIBS=Split("-lcurl -ljsoncpp")
+)

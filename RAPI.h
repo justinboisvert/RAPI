@@ -3,7 +3,7 @@
 #include "CurlRetrieve.h"
 #include "RedditUser.h"
 #include "RedditThread.h"
-#include "json.h"
+#include <jsoncpp/json/json.h>
 #include "SubReddit.h"
 #include <iostream>
 #include <vector>
@@ -22,6 +22,7 @@ public:
     static void updateUserInfo();
     static void submitLink(std::string title, std::string link, std::string subreddit);
     static void submitStory(std::string title, std::string body, std::string subreddit);
+    static RedditUser* retrieveCurrentUser();
     
 private:
     static CurlRetrieve* httpStream;

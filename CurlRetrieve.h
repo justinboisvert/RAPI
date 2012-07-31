@@ -1,7 +1,7 @@
 #ifndef RedditPortable_CurlRetrieve_h
 #define RedditPortable_CurlRetrieve_h
-#include "curl.h"
-#include "easy.h"
+#include <curl/curl.h>
+#include <curl/easy.h>
 #include <iostream>
 #include <sstream>
 #include <vector>

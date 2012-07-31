@@ -176,6 +176,10 @@ std::vector<RedditThread*> RAPI::getLatestThreads(std::string subreddit){
     httpStream->clearBuffer();
     return thread_bucket;
 }
+
+RedditUser* RAPI::retrieveCurrentUser()  {
+    return user;
+}
 void RAPI::logout(){
     userlogin = false;
     delete user;
